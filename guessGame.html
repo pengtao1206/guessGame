@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+var a=parseInt(Math.random()*(100-1+1)+1);
+console.log(a);
+for( var i=0; i<9; i++){
+var b=Number(prompt("请输入一个数字"));
+if(b){
+	if(a==b){alert("right");break;}
+	else{
+	if(a>b){alert("too small,enter again, "+(9-i)+" times left")}
+	else{alert("too big,enter again, "+(9-i)+" times left ")}
+	}
+}
+else(alert("你输入的不是数字，请输入数字"))
+}
+alert("游戏结束，the end")
+</script>
+</body>
+</html>
